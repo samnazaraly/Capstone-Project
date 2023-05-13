@@ -6,6 +6,9 @@ if ($_SERVER["REQUEST_METHOD"]==="POST"){
 //require to check through database
 $mysqli = require __DIR__ . "/signupdatabase.php";
 
+//prevent sql injection
+$email = $mysqli->real_escape_string($_POST["email"]);
+
 //search database for matching email
 $sql = sprintf("SELECT * FROM user 
                 WHERE email ='%s'",
@@ -29,7 +32,7 @@ if($user){
 
     //if password entered = password in database, display success 
 
-    if(($_POST["password"]=== $user["password"])){
+    if (password_verify($_POST["password"], $user["password"])) {
         echo("login successful");
     }
     else{

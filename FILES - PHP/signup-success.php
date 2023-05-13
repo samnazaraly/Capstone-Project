@@ -11,6 +11,6 @@
     <h1> signup</h1>
     <p>Signup successful</p>
 
-    <p>To sign in click <a href="login.php">here</p> 
+    <p>To sign in click <a href="login.php">here</a></p> 
 </body>
 </html>
