@@ -16,6 +16,10 @@ if (!isset($_SESSION['userId'])) {
 <body>
     <h1>Welcome, <?php echo $_SESSION['userName']; ?></h1>
     <p>This is your dashboard.</p>
-    <a href="logout.php">Logout</a> <!-- This will be our logout script -->
+
+    <!-- Add the button to redirect to the symptom input page -->
+    <p><a href="symptom-input.php">Use the Symptom Checker Tool</a></p>
+
+    <p><a href="logout.php">Logout</a></p> <!-- This will be our logout script -->
 </body>
 </html>
