@@ -10,10 +10,16 @@
         <button type="submit">Diagnose</button>
     </form>
 
+    <!-- Display the symptoms entered if available -->
+    <?php if (isset($_GET['symptoms'])) : ?>
+        <h2>Symptoms Entered:</h2>
+        <p><?php echo urldecode($_GET['symptoms']); ?></p>
+    <?php endif; ?>
+
     <!-- Display the diagnosis result if available -->
     <?php if (isset($_GET['diagnosis'])) : ?>
-        <h2>Diagnosis Result:</h2>
-        <p><?php echo $_GET['diagnosis']; ?></p>
+        <h2>Based on the symptoms entered above, here is a list of possible conditions you might have:</h2>
+        <p><?php echo urldecode($_GET['diagnosis']); ?></p>
     <?php endif; ?>
 </body>
 </html>
