@@ -3,7 +3,7 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-require_once __DIR__ . "/DiagnosisAPI.php"; // Adjusted namespace
+require_once __DIR__ . '/../../FILESPHP/DiagnosisAPI.php'; // Adjusted namespace
 
 class DiagnosisAPITest extends TestCase
 {
@@ -17,11 +17,10 @@ class DiagnosisAPITest extends TestCase
 
         $response = $diagnosisAPI->makeDiagnosisRequest();
 
-        // Check if the response is a string (the method should return the diagnosis string)
-        $this->assertIsString($response);
+        // Check if the response is an array (the method should return an array of diagnosis options)
+        $this->assertIsArray($response);
 
-        // Check if the response contains some expected diagnoses
-        $this->assertStringContainsString('common cold', $response);
-        $this->assertStringContainsString('Pneumonia', $response);
+        // Check if the response contains the expected diagnosis options
+        $this->assertStringContainsString('pneumonia', $response['choices'][0]['text']);
     }
 }

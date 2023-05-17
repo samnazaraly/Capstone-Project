@@ -9,7 +9,7 @@ class DiagnosisAPI {
 
     public function makeDiagnosisRequest() {
         $defaultPrompt = "Given the following symptoms: " . $this->symptoms . 
-        " please provide a numbered list of possible conditions that could cause these symptoms. 
+        " please provide a numbered list of the 10 most common possible conditions that could cause these symptoms. 
         Add a line break between each number. ";
         $finalPrompt = $defaultPrompt . $this->symptoms;
 
@@ -25,7 +25,7 @@ class DiagnosisAPI {
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($inputData));
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             'Content-Type: application/json',
-            'Authorization: Bearer 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'
+            'Authorization: Bearer (API KEY HERE)'
         ]);
 
         $response = curl_exec($ch);
