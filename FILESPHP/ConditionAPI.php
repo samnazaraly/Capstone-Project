@@ -1,24 +1,24 @@
 <?php
 
-class DiagnosisAPI {
-    private $symptoms;
+class ConditionAPI {
+    private $condition;
 
-    public function __construct($symptoms) {
-        $this->symptoms = $symptoms;
+    public function __construct($condition) {
+        $this->condition = $condition;
     }
 
-    public function makeDiagnosisRequest() {
-        $defaultPrompt = "Given the following specific symptoms: " . $this->symptoms . 
-        ", provide a detailed and focused list of the top 10 most probable medical conditions that are directly associated with ALL these symptoms combined. 
-        Please make sure each condition comprehensively accounts for all the mentioned symptoms. Number each condition and add a line break between each one. ";
+    public function makeSymptomsListRequest() {
+        $defaultPrompt = "Given the following specific condition: " . $this->condition . 
+        ", provide a detailed and focused numbered list of the top 10 most probable medical symptoms that are directly associated with this condition. 
+        Number each condition and add a line break between each one. ";
 
-        $finalPrompt = $defaultPrompt . $this->symptoms;
+        $finalPrompt = $defaultPrompt . $this->condition;
 
         $inputData = [
             "prompt" => $finalPrompt,
             "model" => "text-davinci-002",
             "max_tokens" => 1000,
-            "temperature" => 0.3
+            "temperature" => 0.1
         ];
 
         $ch = curl_init('https://api.openai.com/v1/completions');
