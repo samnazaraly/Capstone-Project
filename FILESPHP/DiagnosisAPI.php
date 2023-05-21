@@ -10,7 +10,8 @@ class DiagnosisAPI {
     public function makeDiagnosisRequest() {
         $defaultPrompt = "Given the following specific symptoms: " . $this->symptoms . 
         ", provide a detailed and focused list of the top 10 most probable medical conditions that are directly associated with ALL these symptoms combined. 
-        Please make sure each condition comprehensively accounts for all the mentioned symptoms. Number each condition and add a line break between each one. ";
+        Please make sure each condition comprehensively accounts for all the mentioned symptoms. Number each condition and add a line break between each one. 
+        Make sure the list is in the same language as the prompt, for example, if the symptoms are in french make sure the conditions are also provided in french";
 
         $finalPrompt = $defaultPrompt . $this->symptoms;
 
@@ -27,7 +28,7 @@ class DiagnosisAPI {
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($inputData));
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             'Content-Type: application/json',
-            'Authorization: Bearer (apikeyhere)'
+            'Authorization: Bearer (ENTER API KEY)'
         ]);
 
         $response = curl_exec($ch);

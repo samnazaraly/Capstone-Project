@@ -21,5 +21,7 @@
         <h2>Based on the symptoms entered above, here is a list of possible conditions you might have:</h2>
         <p><?php echo urldecode($_GET['diagnosis']); ?></p>
     <?php endif; ?>
+
+     <p><a href="dashboard.php">Click here to return to dashboard</a></p> 
 </body>
 </html>

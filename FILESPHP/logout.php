@@ -3,5 +3,5 @@
     // Destroy session to log out user
     session_destroy();
     // Redirect to landing page
-    header('Location: index.php');
+    header('Location: home.php');
 ?>
