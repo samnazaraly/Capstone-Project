@@ -14,6 +14,11 @@ if (!isset($_SESSION['userId'])) {
     <title>User Dashboard</title>
 </head>
 <body>
+
+<!--reference to my account page-->
+<a href="myaccount.php">My Account</a>
+
+
     <h1>Welcome, <?php echo $_SESSION['userName']; ?></h1>
     <p>This is your dashboard.</p>
 
@@ -25,6 +30,8 @@ if (!isset($_SESSION['userId'])) {
     <p>To view a list of possible symptoms related to a condition <a href="condition-input.php">Use the Condition Symptoms List Tool</a></p>
 
     <p><a href="logout.php">Logout</a></p> <!-- This will be our logout script -->
-    
+
+
+
 </body>
 </html>
