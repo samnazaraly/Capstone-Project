@@ -18,8 +18,10 @@
 
     <!-- Display the diagnosis result if available -->
     <?php if (isset($_GET['symptomlist'])) : ?>
-        <h2>Based on the symptoms entered above, here is a list of possible symptoms you might have:</h2>
+        <h2>Here is a list of symptoms associated to the condition entered:</h2>
         <p><?php echo urldecode($_GET['symptomlist']); ?></p>
     <?php endif; ?>
+
+    <p><a href="dashboard.php">Click here to return to dashboard</a></p> 
 </body>
 </html>

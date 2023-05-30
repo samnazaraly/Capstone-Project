@@ -18,7 +18,7 @@
 
     <!-- Display the diagnosis result if available -->
     <?php if (isset($_GET['diagnosis'])) : ?>
-        <h2>Based on the symptoms entered above, here is a list of possible conditions you might have:</h2>
+        <h2>Here is a list of conditions associated to the symptoms entered above: </h2>
         <p><?php echo urldecode($_GET['diagnosis']); ?></p>
     <?php endif; ?>
 

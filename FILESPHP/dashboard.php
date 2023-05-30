@@ -23,13 +23,16 @@ if (!isset($_SESSION['userId'])) {
     <p>This is your dashboard.</p>
 
     <!-- Add the button to redirect to the symptom input page -->
-    <p>To obtain a list of possible conditions related to your symptoms <a href="symptom-input.php">Use the Symptom Checker Tool</a></p>
+    <p>To obtain a list of possible conditions related to one or more symptoms <a href="symptom-input.php">click here</a></p>
 
 
     <!-- Add the button to redirect to the symptom list page for condition input-->
-    <p>To view a list of possible symptoms related to a condition <a href="condition-input.php">Use the Condition Symptoms List Tool</a></p>
+    <p>To obtain a list of symptoms related to a specific condition <a href="condition-input.php">click here</a></p>
 
     <p><a href="logout.php">Logout</a></p> <!-- This will be our logout script -->
+
+    <!-- add link to return to homepage-->
+    <p><a href="home.php">Return to homepage</p>
 
 
 
