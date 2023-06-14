@@ -12,29 +12,40 @@ if (!isset($_SESSION['userId'])) {
 <html>
 <head>
     <title>User Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
 </head>
 <body>
-
-<!--reference to my account page-->
-<a href="myaccount.php">My Account</a>
-
-
-    <h1>Welcome, <?php echo $_SESSION['userName']; ?></h1>
-    <p>This is your dashboard.</p>
-
-    <!-- Add the button to redirect to the symptom input page -->
-    <p>To obtain a list of possible conditions related to one or more symptoms <a href="symptom-input.php">click here</a></p>
-
-
-    <!-- Add the button to redirect to the symptom list page for condition input-->
-    <p>To obtain a list of symptoms related to a specific condition <a href="condition-input.php">click here</a></p>
-
-    <p><a href="logout.php">Logout</a></p> <!-- This will be our logout script -->
-
-    <!-- add link to return to homepage-->
-    <p><a href="home.php">Return to homepage</p>
-
-
-
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+            <img src="MDAI_LOGO.png" alt="">
+            </div>
+            <?php
+                if (isset($_SESSION['userId'])) {
+                    echo '<a href="myaccount.php">My Account</a>';
+                } else {
+                    echo '<a href="login.php">Log In</a>';
+                }
+            ?>
+        </div>
+    </header>
+    <main>
+        <section class="welcome-section">
+            <h1>Welcome, <?php echo $_SESSION['userName']; ?></h1>
+            <p>This is your dashboard.</p>
+            <!-- Add the buttons to redirect to the symptom input and condition input pages -->
+            <p>To obtain a list of possible conditions related to one or more symptoms <a href="symptom-input.php">click here</a></p>
+            <p>To obtain a list of symptoms related to a specific condition <a href="condition-input.php">click here</a></p>
+        </section>
+        
+        <section class="section-two">
+            <p><a href="logout.php">Logout</a></p>
+            <!-- Add a link to return to homepage -->
+            <p><a href="home.php">Return to homepage</a></p>
+        </section>
+    </main>
+    <footer>
+        <!-- Your Footer Content -->
+    </footer>
 </body>
 </html>

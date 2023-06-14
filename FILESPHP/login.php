@@ -27,6 +27,9 @@
     <button>Log in</button>
 
 </form>
+
+ <!-- add link to return to homepage-->
+ <p><a href="home.php">Return to homepage</p>
     
     
 </body>

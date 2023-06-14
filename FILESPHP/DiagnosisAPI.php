@@ -28,7 +28,7 @@ class DiagnosisAPI {
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($inputData));
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             'Content-Type: application/json',
-            'Authorization: Bearer (YOUR API KEY HERE)'
+            'Authorization: Bearer '
         ]);
 
         $response = curl_exec($ch);
