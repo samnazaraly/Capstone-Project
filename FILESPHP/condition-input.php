@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Condition Input</title>
-    <link rel="stylesheet" type="text/css" href="condition-input.css">
+    <link rel="stylesheet" type="text/css" href="../FILESCSS/condition-input.css">
 </head>
 <body>
     <header>

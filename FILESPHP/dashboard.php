@@ -12,7 +12,7 @@ if (!isset($_SESSION['userId'])) {
 <html>
 <head>
     <title>User Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    <link rel="stylesheet" type="text/css" href="../FILESCSS/dashboard.css">
 </head>
 <body>
     <header>

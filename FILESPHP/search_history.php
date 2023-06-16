@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 require_once 'signupdatabase.php';
 
 if (!isset($_SESSION['userId'])) {
@@ -24,18 +23,43 @@ $searchHistory = $result->fetch_all(MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search History</title>
+    <link rel="stylesheet" type="text/css" href="../FILESCSS/search_history.css">
 </head>
 <body>
-
-    <h1>Search History</h1>
-    <?php foreach ($searchHistory as $search) : ?>
-        <p>Search: <?php echo $search['search_term']; ?> - Date: <?php echo $search['timestamp']; ?></p>
-    <?php endforeach; ?>
-
-    <p><a href="dashboard.php">Click here to return to dashboard</a></p> 
-    <p><a href="logout.php">Logout</a></p>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="MDAI_LOGO.png" alt="">
+            </div>
+            <?php
+                if (isset($_SESSION['userId'])) {
+                    echo '<a href="dashboard.php">Dashboard</a>';
+                    echo ' | ';
+                    echo '<a href="myaccount.php">My Account</a>';
+                    echo ' | ';
+                    echo '<a href="logout.php">Logout</a>';
+                } else {
+                    echo '<a href="login.php">Log In</a>';
+                }
+            ?>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Search History</h1>
+            <?php foreach ($searchHistory as $search) : ?>
+                <p>Search: <?php echo $search['search_term']; ?> - Date: <?php echo $search['timestamp']; ?></p>
+            <?php endforeach; ?>
+        </section>
+        <section>
+            <p><a href="dashboard.php">Click here to return to dashboard</a></p> 
+            <p><a href="logout.php">Logout</a></p>
+        </section>
+    </main>
 </body>
 </html>

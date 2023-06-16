@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: #6b0606; /* Dark Red */
+    padding: 10px 0;
+    color: #fff;
+}
+
+.nav-bar {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: grey; /* Lighter color when hovered */
+    border-radius: 10px;
+}
+
+.logo img {
+height: 50px;
+width: 50px;
+align-self: start;
+}
+
+main {
+    margin: 15px;
+}
+
+.account-section {
+    text-align: left;
+    padding: 20px;
+}
+
+.account-section h1 {
+    color: #6b0606; /* Dark Red */
+}
+
+.account-section p {
+    color: #333; /* Dark text color */
+}
+
+.account-section a {
+    color: #6b0606; /* Dark Red */
+}
+
+.account-section a:hover {
+    color: #000; /* Black when hovered */
+}
