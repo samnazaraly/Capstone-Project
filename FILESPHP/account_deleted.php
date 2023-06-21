@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Successful</title>
+    <title>Email Changed</title>
     <link rel="stylesheet" type="text/css" href="../FILESCSS/myaccount.css">
 </head>
 <body>
@@ -19,9 +19,11 @@
 
     <main>
         <section class="account-section">
-            <h1>Signup Successful!</h1>
-            <p>You have successfully signed up for an account.</p>
-            <p>To sign in click <a href="login.php">here</a></p> 
+            <h1>Account deletion request</h1>
+
+            <p>Account deleted successfully.</p>
+
+            <p><a href="home.php">Return to homepage</a></p>
         </section>
     </main>
 
