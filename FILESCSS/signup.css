@@ -20,7 +20,6 @@ header {
 .nav-bar a {
     color: #fff;
     text-decoration: none;
-    align-self: center;
 }
 
 .nav-bar a:hover {
@@ -38,25 +37,25 @@ main {
     margin: 15px;
 }
 
-.welcome-section {
+.signup-section {
     text-align: center;
     padding: 20px;
     background-color: #f5f5f5; /* Light gray background */
 }
 
-.welcome-section h1 {
+.signup-section h1 {
     color: #6b0606; /* Dark Red */
 }
 
-.welcome-section p {
+.signup-section p {
     color: #333; /* Dark text color */
 }
 
-.welcome-section a {
+.signup-section a {
     color: #6b0606; /* Dark Red */
 }
 
-.welcome-section a:hover {
+.signup-section a:hover {
     color: #000; /* Black when hovered */
 }
 

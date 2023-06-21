@@ -26,6 +26,8 @@ if ($_SERVER["REQUEST_METHOD"]==="POST"){
             // Store user data in session
             $_SESSION['userId'] = $user['id'];
             $_SESSION['userName'] = $user['name'];
+            $_SESSION['userEmail'] = $user['email'];
+
             //if successful, redirect to dashboard 
             header('Location: dashboard.php');
         }
