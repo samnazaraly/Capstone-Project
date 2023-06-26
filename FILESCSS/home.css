@@ -70,10 +70,7 @@ main {
 .section-two h1{
     color:#6b0606;
     padding: 20px;
-
 }
-
-
 
 hr {
     border: 1px solid #6b0606;
@@ -85,3 +82,4 @@ footer {
     color: #fff;
     text-align: center;
 }
+

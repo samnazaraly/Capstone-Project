@@ -20,6 +20,7 @@ header {
 .nav-bar a {
     color: #fff;
     text-decoration: none;
+    align-self: center;
 }
 
 .nav-bar a:hover {
@@ -63,17 +64,12 @@ main {
     text-align: center;
     padding: 20px;
     background-color: #f5f5f5; /* Light gray background */
+
 }
 
 .section-two h1{
     color:#6b0606;
     padding: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 hr {
@@ -86,3 +82,4 @@ footer {
     color: #fff;
     text-align: center;
 }
+
