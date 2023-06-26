@@ -30,28 +30,18 @@
         <section class="welcome-section">
             <h1>Welcome to AiMD</h1>
 
-<!-- Slideshow container -->
-<div class="slideshow-container">
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
+            <div class="carousel">
+  <div class="slide left">
     <img src="aipatient4.jpeg">
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-  
-  <div class="mySlides fade">
+  <div class="slide center">
     <img src="aidoctor.webp">
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-
-  <div class="mySlides fade">
+  <div class="slide right">
     <img src="aidoctor2.jpeg">
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
 </div>
-<br>
+
 
             <p>To explore all our features, <a href="login.php">log in</a></p>
             <p>If you don't have an account, click <a href="signup.php">here</a></p>

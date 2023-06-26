@@ -83,3 +83,52 @@ footer {
     text-align: center;
 }
 
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide {
+  flex: 1;
+  transition: flex 0.5s ease;
+  margin: 10px;
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide:hover {
+  flex-grow: 3;
+  z-index: 2;
+}
+
+.center {
+  flex-grow: 2;
+  z-index: 3;
+}
+
+.center:hover {
+  flex-grow: 4;
+}
+
+.left img {
+  transform: perspective(1200px) rotateY(45deg);
+}
+
+.right img {
+  transform: perspective(1200px) rotateY(-45deg);
+}
+
+.left:hover img {
+  transform: perspective(1200px) rotateY(0deg);
+}
+
+.right:hover img {
+  transform: perspective(1200px) rotateY(0deg);
+}
