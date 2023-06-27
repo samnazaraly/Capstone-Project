@@ -20,6 +20,7 @@ header {
 .nav-bar a {
     color: #fff;
     text-decoration: none;
+    align-self: center;
 }
 
 .nav-bar a:hover {

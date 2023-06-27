@@ -25,6 +25,8 @@
                 <button type="submit">Diagnose</button>
             </form>
 
+            <p><a href="dashboard.php">Click here to return to dashboard</a></p> 
+
             <!-- Display the symptoms entered if available -->
             <?php if (isset($_GET['symptoms'])) : ?>
                 <h2>Symptoms Entered:</h2>
@@ -40,7 +42,6 @@
     </main>
 
     <footer>
-        <p><a href="dashboard.php">Click here to return to dashboard</a></p> 
     </footer>
 </body>
 </html>

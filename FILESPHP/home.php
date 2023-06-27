@@ -20,8 +20,12 @@
                   echo '<a href="myaccount.php">My Account</a>';
                   echo ' | ';
                   echo '<a href="logout.php">Logout</a>';
+                  echo ' | ';
+                  echo '<a href="About.php">About</a>';
               } else {
                   echo '<a href="login.php">Log In</a>';
+                  echo ' | ';
+                  echo '<a href="About.php">About</a>';
               }
           ?>
         </div>
@@ -50,7 +54,7 @@
         <hr>
 
        <section class="section-two">
-        <h1>Section two</h1>
+        <h1>Who are we?</h1>
         <p>The future of medical diagnosis</p>
 
        </section>
