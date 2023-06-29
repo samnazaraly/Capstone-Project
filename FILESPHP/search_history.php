@@ -12,7 +12,7 @@ $query = "SELECT search_term, timestamp FROM search_history WHERE user_id = ?";
 $stmt = $mysqli->prepare($query);
 
 if (!$stmt) {
-    printf("Error: %s.\n", $mysqli->error);
+    printf("Error: %s.\n", $mysqli->$error);
 }
 
 $stmt->bind_param('i', $userId);

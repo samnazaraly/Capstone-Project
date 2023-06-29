@@ -27,7 +27,7 @@ class ConditionAPI {
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($inputData));
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             'Content-Type: application/json',
-            'Authorization: Bearer '
+            'Authorization: Bearer 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'
         ]);
 
         $response = curl_exec($ch);
