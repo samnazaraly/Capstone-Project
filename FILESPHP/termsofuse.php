@@ -32,11 +32,7 @@
     </header>
     <main>
         <section class="welcome-section">
-            <h1>About Us</h1>
-            <p>Founded in 2023, AiMD is committed to revolutionizing the medical field. Our advanced AI system assists doctors and patients, making healthcare more accurate, faster, and accessible. We believe in a future where AI and human intelligence work together to create better health outcomes for everyone, everywhere.</p>
-            <div class="imgtwo">
-    <img src="aipatient2.webp">
-  </div>
+            <h1>Terms Of Use</h1>
   <p><a href="home.php">Return to homepage</a></p>
         </section>
     </main>

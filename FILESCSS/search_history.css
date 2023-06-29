@@ -58,3 +58,8 @@ main {
 .account-section a:hover {
     color: #000; /* Black when hovered */
 }
+
+footer a {
+    color: white;
+    text-decoration: none;
+}

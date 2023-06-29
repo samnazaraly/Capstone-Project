@@ -87,3 +87,9 @@ footer {
     color: #fff;
     text-align: center;
 }
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+

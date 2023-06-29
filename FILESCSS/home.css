@@ -132,3 +132,10 @@ footer {
 .right:hover img {
   transform: perspective(1200px) rotateY(0deg);
 }
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+

@@ -61,5 +61,10 @@ $searchHistory = $result->fetch_all(MYSQLI_ASSOC);
             <p><a href="logout.php">Logout</a></p>
         </section>
     </main>
+    <footer>
+        <a href="privacypolicy.php">Privacy Policy</a>
+        <a href="contactus.php">Contact Us</a>
+        <a href="termsofuse.php">Terms Of Use</a>
+    </footer>
 </body>
 </html>

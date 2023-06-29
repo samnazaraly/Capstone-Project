@@ -28,7 +28,6 @@
     </main>
 
     <footer>
-        <!-- Your Footer Content -->
     </footer>
 </body>
 </html>

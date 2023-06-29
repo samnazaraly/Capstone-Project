@@ -45,7 +45,9 @@ if (!isset($_SESSION['userId'])) {
         </section>
     </main>
     <footer>
-        <!-- Your Footer Content -->
+    <a href="privacypolicy.php">Privacy Policy</a>
+        <a href="contactus.php">Contact Us</a>
+        <a href="termsofuse.php">Terms Of Use</a>
     </footer>
 </body>
 </html>

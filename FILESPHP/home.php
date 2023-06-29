@@ -21,11 +21,11 @@
                   echo ' | ';
                   echo '<a href="logout.php">Logout</a>';
                   echo ' | ';
-                  echo '<a href="About.php">About</a>';
+                  echo '<a href="about.php">About</a>';
               } else {
                   echo '<a href="login.php">Log In</a>';
                   echo ' | ';
-                  echo '<a href="About.php">About</a>';
+                  echo '<a href="about.php">About</a>';
               }
           ?>
         </div>
@@ -55,15 +55,34 @@
 
        <section class="section-two">
         <h1>Who are we?</h1>
+
+        <div class="imgone">
+    <img src="aipatient.jpeg">
+  </div>
+
         <p>The future of medical diagnosis</p>
+
+        <p>At AiMD, we're a dedicated team of technologists
+            and health enthusiasts united by our shared passion for integrating cutting-edge 
+            AI technology with healthcare. 
+            Our mission is to revolutionize the way people approach their health, 
+            making accurate medical diagnosis accessible and understandable to all, 
+            no matter where they are. 
+            We believe in empowering our users with knowledge and insights about their health, 
+            and we've developed our AI-driven medical diagnosis tool to do just that. 
+            Guided by our core values of innovation, integrity, and inclusivity, 
+            we're constantly evolving our platform to better serve our users and improve global healthcare standards.
+            Together, we're working towards a future where everyone can have instant access to reliable health information, 
+            fostering a world where preventative care and early diagnosis are the norm, not the exception.</p>
 
        </section>
 
        <hr>
     </main>
     <footer>
-        <!-- Your Footer Content -->
+        <a href="privacypolicy.php">Privacy Policy</a>
+        <a href="contactus.php">Contact Us</a>
+        <a href="termsofuse.php">Terms Of Use</a>
     </footer>
-    <script src="home.js"></script>
 </body>
 </html>
