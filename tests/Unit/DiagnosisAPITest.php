@@ -12,7 +12,7 @@ class DiagnosisAPITest extends TestCase
      */
     public function test_makeDiagnosisRequest()
     {
-        $symptoms = "cough";
+        $symptoms = "headache";
         $diagnosisAPI = new \DiagnosisAPI($symptoms); // Instantiate the DiagnosisAPI class
 
         $response = $diagnosisAPI->makeDiagnosisRequest();
@@ -21,6 +21,6 @@ class DiagnosisAPITest extends TestCase
         $this->assertIsArray($response);
 
         // Check if the response contains the expected diagnosis options
-        $this->assertStringContainsString('pneumonia', $response['choices'][0]['text']);
+        $this->assertStringContainsString('Migraine', $response['choices'][0]['text']);
     }
 }

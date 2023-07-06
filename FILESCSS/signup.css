@@ -21,11 +21,15 @@ header {
     color: #fff;
     text-decoration: none;
     align-self: center;
+    padding: 10px 20px;  /* Space around links */
 }
 
 .nav-bar a:hover {
     color: grey; /* Lighter color when hovered */
     border-radius: 10px;
+    background-color: #9b3131;  /* Button-like feel on hover */
+    transition: 0.3s;  /* Smooth transition */
+    
 }
 
 .logo img {

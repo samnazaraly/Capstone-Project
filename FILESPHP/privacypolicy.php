@@ -9,10 +9,13 @@
 <body>
     <header>
         <div class="nav-bar">
+
             <div class="logo">
                 <img src="MDAI_LOGO.png" alt="">
             </div>
         <?php
+
+        //start or resume session 
             session_start();
             if (isset($_SESSION['userId'])) {
                 echo '<a href="dashboard.php">Dashboard</a>';

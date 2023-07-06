@@ -2,32 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Making the webpage responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Account</title>
-    <link rel="stylesheet" type="text/css" href="../FILESCSS/home.css">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="../FILESCSS/myaccount.css">
 </head>
 <body>
     <header>
         <div class="nav-bar">
             <div class="logo">
+                <!-- Logo of the company -->
                 <img src="MDAI_LOGO.png" alt="">
             </div>
             <?php
-                session_start();
-                if (isset($_SESSION['userId'])) {
-                    echo '<a href="dashboard.php">Dashboard</a>';
-                    echo ' | ';
-                    echo '<a href="myaccount.php">My Account</a>';
-                    echo ' | ';
-                    echo '<a href="logout.php">Logout</a>';
-                } else {
-                    echo '<a href="login.php">Log In</a>';
-                }
+            // Starts a new or resumes existing session
+            session_start();
+
+            // Checks if the session variable 'userId' is set
+            if (isset($_SESSION['userId'])) {
+                // If user is logged in, show dashboard, account and logout options
+                echo '<a href="dashboard.php">Dashboard</a>';
+                echo ' | ';
+                echo '<a href="myaccount.php">My Account</a>';
+                echo ' | ';
+                echo '<a href="logout.php">Logout</a>';
+            } else {
+                // If user is not logged in, show login option
+                echo '<a href="login.php">Log In</a>';
+            }
             ?>
         </div>
     </header>
     <main>
         <section class="my-account-section">
+            <!-- Account options for the user -->
             <h1>My Account</h1>
             <p><a href="change_email.php">Change Email</a></p>
             <p><a href="change_password.php">Change Password</a></p>
@@ -35,11 +44,13 @@
             <p><a href="search_history.php">View Search History</a></p>
         </section>
         <section>
+            <!-- Links to return to dashboard or logout -->
             <p><a href="dashboard.php">Return to dashboard</a></p>
             <p><a href="logout.php">Logout</a></p>
         </section>
     </main>
     <footer>
+        <!-- Footer links -->
         <a href="privacypolicy.php">Privacy Policy</a>
         <a href="contactus.php">Contact Us</a>
         <a href="termsofuse.php">Terms Of Use</a>

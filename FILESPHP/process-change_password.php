@@ -7,6 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $mysqli = require __DIR__ . "/signupdatabase.php";
 
     // get the current password and new password from form
+    // look at current and new password they entered 
     $currentPassword = $_POST["current_password"];
     $newPassword = $_POST["new_password"];
 

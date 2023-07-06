@@ -13,14 +13,19 @@
             <div class="logo">
                 <img src="MDAI_LOGO.png" alt="logo">
             </div>
+            <!-- Link to the My Account page -->
             <a href="myaccount.php">My Account</a>
         </div>
     </header>
 
     <main>
+        <!-- Section for the signup successful message -->
         <section class="account-section">
+            <!-- Title of the page -->
             <h1>Signup Successful!</h1>
+            <!-- Message indicating successful sign up -->
             <p>You have successfully signed up for an account.</p>
+            <!-- Link to the login page -->
             <p>To sign in click <a href="login.php">here</a></p> 
         </section>
     </main>
