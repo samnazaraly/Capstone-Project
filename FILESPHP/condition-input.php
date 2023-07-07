@@ -52,7 +52,8 @@
 
         <section class="welcome-section">
             <!-- Link to return to the dashboard -->
-            <p><a href="dashboard.php">Click here to return to dashboard</a></p>
+            <p><a class="back-button" href="dashboard.php">Click here to return to dashboard</a></p>
+
         </section>
     </main>
     <!-- The footer of the webpage with useful links -->
