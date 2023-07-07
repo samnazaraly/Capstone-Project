@@ -12,18 +12,15 @@
     <header>
         <div class="nav-bar">
             <div class="logo">
-                <!-- Logo image for the website -->
                 <img src="MDAI_LOGO.png" alt="logo">
             </div>
 
-            <!-- Link to user's account page -->
             <a href="myaccount.php">My Account</a>
         </div>
     </header>
 
     <main>
         <section class="account-section">
-            <!-- Header for delete account section -->
             <h1>Delete Account</h1>
 
             <!-- Warning message about account deletion -->
@@ -40,7 +37,6 @@
         </section>
     </main>
 
-    <!-- Footer links to legal information -->
     <footer>
     <a href="privacypolicy.php">Privacy Policy</a>
         <a href="contactus.php">Contact Us</a>

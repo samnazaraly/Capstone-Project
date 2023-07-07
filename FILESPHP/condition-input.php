@@ -7,7 +7,6 @@
 <body>
     <header>
         <div class="nav-bar">
-            <!-- Website logo -->
             <div class="logo">
             <img src="MDAI_LOGO.png" alt="">
             </div>
@@ -56,7 +55,7 @@
 
         </section>
     </main>
-    <!-- The footer of the webpage with useful links -->
+    
     <footer>
         <a href="privacypolicy.php">Privacy Policy</a>
         <a href="contactus.php">Contact Us</a>

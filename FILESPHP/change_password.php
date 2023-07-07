@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="nav-bar">
-            <!-- Website logo -->
+         
             <div class="logo">
                 <img src="MDAI_LOGO.png" alt="logo">
             </div>
@@ -19,7 +19,7 @@
         </div>
     </header>
 
-    <!-- The main content of the webpage -->
+   
     <main>
         <section class="account-section">
             <!-- Heading for the password change section -->

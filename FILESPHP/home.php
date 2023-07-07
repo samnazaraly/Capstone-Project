@@ -1,32 +1,19 @@
 <!DOCTYPE html>
-<!-- The declaration to use HTML5 -->
 <html lang="en">
-<!-- Beginning of HTML, setting English as default language -->
-
 <head>
-    <!-- Contains meta information about the document -->
     <meta charset="UTF-8">
-    <!-- Character encoding for the HTML document is set to UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- The viewport is the user's visible area of a web page. The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser. -->
     <title>Landing Page</title>
-    <!-- The title of the document, shown in the browser's title bar or a page's tab -->
     <link rel="stylesheet" type="text/css" href="../FILESCSS/home.css">
-    <!-- Link to external CSS file -->
 </head>
 
 <body>
-    <!-- Beginning of the visible part of the HTML document -->
     <header>
-        <!-- Container for introductory content or a set of navigational links -->
         <div class="nav-bar">
-            <!-- Division for navigation bar -->
             <div class="logo">
-                <!-- Division for the logo -->
+
                 <img src="MDAI_LOGO.png" alt="">
-                <!-- The website logo -->
             </div>
-            <!-- Beginning of PHP script for session management -->
         <?php
               session_start();
               // Starting a session
@@ -50,13 +37,9 @@
           ?>
         </div>
     </header>
-    <!-- End of header section -->
     <main>
-        <!-- Main content of the document -->
         <section class="welcome-section">
-            <!-- Welcome section of the webpage -->
             <h1>Welcome to AiMD</h1>
-            <!-- Main heading -->
 
             <!-- Carousel of images -->
             <div class="carousel">
@@ -68,21 +51,15 @@
             <p>To explore all our features, <a href="login.php">log in</a></p>
             <p>If you don't have an account, click <a href="signup.php">here</a></p>
         </section>
-        <!-- End of welcome section -->
         <hr>
-        <!-- Horizontal rule or line -->
 
-        <!-- Second section (About us) -->
        <section class="section-two">
         <h1>Who are we?</h1>
         <div class="imgone">
             <img src="aipatient.jpeg">
-            <!-- Image in the "Who are we?" section -->
         </div>
-        <!-- Introductory statement -->
         <p>The future of medical diagnosis</p>
 
-        <!-- Descriptive paragraph about the company -->
         <p>At AiMD, we're a dedicated team of technologists
             and health enthusiasts united by our shared passion for integrating cutting-edge 
             AI technology with healthcare. 
@@ -97,24 +74,13 @@
             fostering a world where preventative care and early diagnosis are the norm, not the exception.</p>
 
        </section>
-       <!-- End of "Who are we?" section -->
        <hr>
-       <!-- Horizontal rule or line -->
     </main>
-    <!-- End of main content -->
-
     <footer>
-        <!-- Footer of the document -->
         <a href="privacypolicy.php">Privacy Policy</a>
-        <!-- Link to Privacy Policy page -->
         <a href="contactus.php">Contact Us</a>
-        <!-- Link to Contact Us page -->
         <a href="termsofuse.php">Terms Of Use</a>
-        <!-- Link to Terms of Use page -->
     </footer>
-    <!-- End of footer section -->
 </body>
-<!-- End of the visible part of the HTML document -->
-
 </html>
-<!-- End of HTML -->
+

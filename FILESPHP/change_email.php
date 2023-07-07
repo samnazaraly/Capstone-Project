@@ -10,19 +10,19 @@
 <body>
     <header>
         <div class="nav-bar">
-            <!-- Website logo -->
+         
             <div class="logo">
                 <img src="MDAI_LOGO.png" alt="logo">
             </div>
-            <!-- Link to the My Account page -->
+         
             <a href="myaccount.php">My Account</a>
         </div>
     </header>
 
-    <!-- The main content of the webpage -->
+
     <main>
         <section class="account-section">
-            <!-- Heading for the email change section -->
+           
             <h1>Change Email</h1>
 
             <?php 
@@ -53,7 +53,7 @@
             <p><a href="myaccount.php">Return to My Account</a></p>
         </section>
     </main>
-    <!-- The footer of the webpage with useful links -->
+  
     <footer>
         <a href="privacypolicy.php">Privacy Policy</a>
         <a href="contactus.php">Contact Us</a>

@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title of the webpage -->
     <title>Contact Us</title>
-    <!-- Link to the external CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="../FILESCSS/home.css">
 </head>
 <body>
     <header>
         <div class="nav-bar">
             <div class="logo">
-                <!-- Logo image for the website -->
                 <img src="MDAI_LOGO.png" alt="">
             </div>
-            <!-- Start of PHP code -->
             <?php
                 // Start or resume a session
                 session_start();
@@ -37,7 +32,6 @@
                     echo '<a href="about.php">About</a>';
                 }
             ?>
-            <!-- End of PHP code -->
         </div>
     </header>
     <main>
@@ -53,11 +47,9 @@
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
                 <input type="submit" value="Submit">
             </form>
-            <!-- Link to return to the homepage -->
             <p><a href="home.php">Return to homepage</a></p>
         </section>
     </main>
-    <!-- The footer with links to legal pages -->
     <footer>
         <a href="privacypolicy.php">Privacy Policy</a>
         <a href="contactus.php">Contact Us</a>
