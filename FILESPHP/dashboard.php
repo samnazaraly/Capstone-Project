@@ -13,9 +13,7 @@ if (!isset($_SESSION['userId'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Title of the webpage -->
     <title>User Dashboard</title>
-    <!-- Link to the external CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="../FILESCSS/dashboard.css">
 </head>
 <body>
@@ -45,18 +43,22 @@ if (!isset($_SESSION['userId'])) {
             <h1>Welcome, <?php echo $_SESSION['userName']; ?></h1>
             <p>This is your dashboard.</p>
             <!-- Links to the symptom input and condition input pages -->
-            <p>To obtain a list of possible conditions related to one or more symptoms <a href="symptom-input.php">click here</a></p>
-            <p>To obtain a list of symptoms related to a specific condition <a href="condition-input.php">click here</a></p>
+            <p>To obtain a list of possible conditions related to one or more symptoms </p>
+            <a href="symptom-input.php">click here</a>
+            <p>To obtain a list of symptoms related to a specific condition</p>
+            <a href="condition-input.php">click here</a>
         </section>
         
         <section class="section-two">
-            <!-- Link to log out and end the session -->
-            <p><a href="logout.php">Logout</a></p>
-            <!-- Link to return to the homepage -->
-            <p><a href="home.php">Return to homepage</a></p>
-        </section>
+    <!-- Link to log out and end the session -->
+    <div class="action-buttons">
+        <a href="logout.php">Logout</a>
+        <!-- Link to return to the homepage -->
+        <a href="home.php">Return to homepage</a>
+    </div>
+</section>
     </main>
-    <!-- The footer with links to legal pages -->
+  
     <footer>
     <a href="privacypolicy.php">Privacy Policy</a>
         <a href="contactus.php">Contact Us</a>

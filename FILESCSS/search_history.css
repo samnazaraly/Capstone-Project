@@ -12,68 +12,98 @@ header {
 }
 
 .nav-bar {
-    padding-top: 10px;
     display: flex;
     justify-content: space-around;
+    padding: 10px;
 }
 
 .nav-bar a {
     color: #fff;
     text-decoration: none;
-    align-self: center;
-    padding: 10px 20px;  /* Space around links */
+    padding: 10px 20px;
 }
 
 .nav-bar a:hover {
-    color: grey; /* Lighter color when hovered */
+    color: grey;
+    background-color: #9b3131;
     border-radius: 10px;
-    background-color: #9b3131;  /* Button-like feel on hover */
-    transition: 0.3s;  /* Smooth transition */
-    
+    transition: 0.3s;
 }
 
 .logo img {
-height: 50px;
-width: 50px;
-align-self: start;
+    height: 50px;
+    width: 50px;
 }
 
 main {
     margin: 15px;
-}
-
-.account-section {
-    text-align: left;
     padding: 20px;
 }
 
-.account-section h1 {
+section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
     color: #6b0606; /* Dark Red */
+    margin-bottom: 10px;
 }
 
-.account-section p {
-    color: #333; /* Dark text color */
+section p {
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.account-section a {
-    color: #6b0606; /* Dark Red */
+section a {
+    color: #6b0606;
+    text-decoration: none;
 }
 
-.account-section a:hover {
-    color: #000; /* Black when hovered */
+section a:hover {
+    color: #9b3131;
 }
-
 
 footer {
     padding: 10px;
-    background-color: #6b0606; /* Dark Red */
+    background-color: #6b0606;
     color: #fff;
     text-align: center;
 }
 
-footer a:hover{
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #9b3131;
+    transition: 0.3s;
+}
+
+.section-two {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* adjust this to add more or less space between the buttons */
+}
+
+.section-two a {
+    display: inline-block;
+    color: #fff;
+    background-color: #6b0606;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size:12px;
+}
+
+.section-two a:hover {
+    background-color: #9b3131;
     color:white;
-    transition: 0.3s;  /* Smooth transition */
-  }
-  
-  
+}
+

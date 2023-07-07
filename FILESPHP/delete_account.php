@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character encoding for the HTML document -->
     <meta charset="UTF-8">
-
-    <!-- Helps ensure correct rendering and touch zooming for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Viewport meta tag to control layout on mobile browsers -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- The title that will be displayed on the tab of the browser -->
     <title>Delete Account</title>
 
-    <!-- Link to the external CSS stylesheet -->
-    <link rel="stylesheet" type="text/css" href="../FILESCSS/myaccount.css">
+    <link rel="stylesheet" type="text/css" href="../FILESCSS/deleteaccount.css">
 </head>
 <body>
     <header>

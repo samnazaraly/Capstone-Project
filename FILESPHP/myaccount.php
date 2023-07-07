@@ -43,10 +43,10 @@
             <p><a href="delete_account.php">Delete Account</a></p>
             <p><a href="search_history.php">View Search History</a></p>
         </section>
-        <section>
+        <section class="section-two">
             <!-- Links to return to dashboard or logout -->
-            <p><a href="dashboard.php">Return to dashboard</a></p>
-            <p><a href="logout.php">Logout</a></p>
+            <a href="dashboard.php">Return to dashboard</a>
+            <a href="logout.php">Logout</a>
         </section>
     </main>
     <footer>

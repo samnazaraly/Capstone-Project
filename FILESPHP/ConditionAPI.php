@@ -38,7 +38,7 @@ class ConditionAPI {
             'Content-Type: application/json',
 
             //enter ChatGPT API KEY HERE 
-            'Authorization: Bearer ' // API key for authorization
+            'Authorization: Bearer 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' // API key for authorization
         ]);
 
         // Execute the cURL request

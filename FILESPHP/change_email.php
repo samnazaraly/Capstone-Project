@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Change Email</title>
-    <link rel="stylesheet" type="text/css" href="../FILESCSS/myaccount.css">
+    <link rel="stylesheet" type="text/css" href="../FILESCSS/changeemail.css">
 </head>
 <body>
     <header>
@@ -33,13 +33,13 @@
 
             <!-- Form for the user to submit their new email -->
             <form action="process-change_email.php" method="post" novalidate>
-                <div>
+                <div class="form-group">
                     <!-- Display the user's current email (read-only) -->
                     <label for="email">Current Email</label>
                     <input type="text" id="email" name="email" value="<?php echo $currentEmail; ?>" readonly>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <!-- Input for the user's new email -->
                     <label for="new_email">New Email</label>
                     <input type="text" id="new_email" name="new_email">

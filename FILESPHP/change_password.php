@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Change Password</title>
-    <link rel="stylesheet" type="text/css" href="../FILESCSS/myaccount.css">
+    <link rel="stylesheet" type="text/css" href="../FILESCSS/changepassword.css">
 </head>
 <body>
     <header>
@@ -27,13 +27,13 @@
 
             <!-- Form for the user to submit their current and new passwords -->
             <form action="process-change_password.php" method="post" novalidate>
-                <div>
+                <div class="form-group">
                     <!-- Input for the user's current password -->
                     <label for="current_password">Current Password</label>
                     <input type="password" id="current_password" name="current_password">
                 </div>
 
-                <div>
+                <div class="form-group">
                     <!-- Input for the user's new password -->
                     <label for="new_password">New Password</label>
                     <input type="password" id="new_password" name="new_password">

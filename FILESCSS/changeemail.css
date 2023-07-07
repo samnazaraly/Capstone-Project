@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Slightly grey background for better contrast */
+}
+
+header {
+    background-color: #6b0606; /* Dark Red */
+    padding: 10px 0;
+    color: #fff;
+}
+
+.nav-bar {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    align-self: center;
+    padding: 10px 20px;  /* Space around links */
+}
+
+.nav-bar a:hover {
+    color: grey; /* Lighter color when hovered */
+    border-radius: 10px;
+    background-color: #9b3131;  /* Button-like feel on hover */
+    transition: 0.3s;  /* Smooth transition */
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    align-self: start;
+}
+
+main {
+    margin: 15px;
+}
+
+.account-section {
+    text-align: left;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Slight shadow for depth */
+}
+
+.account-section h1 {
+    color: #6b0606; /* Dark Red */
+    margin-bottom: 20px; /* Space out elements */
+}
+
+.account-section p {
+    color: #333; /* Dark text color */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space out form elements */
+}
+
+.form-group label {
+    display: block; /* Force label onto new line */
+    font-weight: bold; /* Bold label text */
+    margin-bottom: 5px; /* Space out elements */
+}
+
+.form-group input {
+    display: block; /* Force input onto new line */
+    padding: 10px; /* Padding inside input */
+    width: 100%; /* Full width input */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ddd; /* Border */
+}
+
+.account-section a, .account-section button {
+    display: inline-block;
+    color: #fff;
+    background-color: #6b0606;
+    padding: 10px 20px; /* Larger padding for larger, more clickable area */
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-size: 12px; /* Larger font size */
+}
+
+.account-section a:hover, .account-section button:hover {
+    background-color: #9b3131;
+    text-decoration: none;
+}
+
+footer {
+    padding: 10px;
+    background-color: #6b0606; /* Dark Red */
+    color: #fff;
+    text-align: center;
+    margin-top: 50px; /* Space out footer */
+}
+
+footer a:hover{
+    color:white;
+    transition: 0.3s;  /* Smooth transition */
+}

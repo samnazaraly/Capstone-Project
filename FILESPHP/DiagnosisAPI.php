@@ -40,7 +40,7 @@ class DiagnosisAPI {
             'Content-Type: application/json',
         
             //enter CHATGPT API KEY HERE 
-            'Authorization: Bearer '
+            'Authorization: Bearer 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'
         ]);
 
         // Executing the cURL session and getting the response

@@ -77,10 +77,9 @@ $searchHistory = $result->fetch_all(MYSQLI_ASSOC);
                 <p>Search: <?php echo $search['search_term']; ?> - Date: <?php echo $search['timestamp']; ?></p>
             <?php endforeach; ?>
         </section>
-        <section>
-            <!-- Link to return to dashboard and logout -->
-            <p><a href="dashboard.php">Click here to return to dashboard</a></p> 
-            <p><a href="logout.php">Logout</a></p>
+        <section class="section-two">
+            <p><a href="myaccount.php">Return to My Account</a></p>
+            <a href="logout.php">Logout</a>
         </section>
     </main>
     <footer>
